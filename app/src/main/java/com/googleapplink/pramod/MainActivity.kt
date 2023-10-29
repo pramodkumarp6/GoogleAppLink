@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.link.setOnClickListener {
 
+<<<<<<< HEAD
             applink()
         }
     }
@@ -27,10 +28,31 @@ class MainActivity : AppCompatActivity() {
       
         val s = "https://play.google.com/store/apps"
 
+=======
+           // applink()
+
+            gmaillink()
+        }
+    }
+
+    private fun gmaillink() {
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse("mailto:pramodkumarp6@gmail.com")
+
+        startActivity(intent)
+    }
+
+    private fun applink() {
+        val s = "https://play.google.com/store/apps"
+>>>>>>> 4ffabdf (Initial commit)
         val intent = Intent(Intent.ACTION_VIEW)
         intent.data = Uri.parse("geo:37.7749,-122.4194")
         intent.setPackage("com.google.android.apps.maps");
         startActivity(intent)
 
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ffabdf (Initial commit)
 }
